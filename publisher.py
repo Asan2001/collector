@@ -31,7 +31,7 @@ publisher.on_message = on_message
 publisher.loop_start()
 
 sun = Sun(100, math.pi/2, 12)  # height, angle, day_length
-cloud = Cloud(60, 10, -50, 10)  # height, width, position, velocity
+cloud = Cloud(60, 15, -50, 10)  # height, width, position, velocity
 sensor = LightDetector(0)
 for i in range(100):
     sun.move(1)
